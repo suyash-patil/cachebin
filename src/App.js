@@ -16,7 +16,7 @@ function App() {
           <Tab title="Create" artwork={Plus}>
             <CreateBin />
           </Tab>
-          <Tab title="Get" artwork={ArrowDown}>
+          <Tab title="Fetch" artwork={ArrowDown}>
             <GetBin />
           </Tab>
         </StatefulTabs>
