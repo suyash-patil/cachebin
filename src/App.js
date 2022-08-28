@@ -8,7 +8,7 @@ import GetBin from './components/GetBin';
 
 function App() {
   return (
-    <Block className='App'>
+    <Block style={{padding: '20px'}}>
       <h1>Cachebin</h1>
       <h4>Cachebin is a safe and decentralized service to share code snippets, notes and many more. Paste anything and share with your friends</h4>  
       <Card>
