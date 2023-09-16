@@ -45,6 +45,7 @@ const CreateBin = () => {
     const sha256 = async (str) => {
         // TextEncoder is used to convert a given string to utf-8 standard. It returns Uint8Array from the string
         const buf = await crypto.subtle.digest("SHA-256", new TextEncoder("utf-8").encode(str));
+        console.log(Array.prototype.map.call(new Uint8Array(buf), x=>(('00'+x.toString(16)).slice(-2))).join(''));
         return Array.prototype.map.call(new Uint8Array(buf), x=>(('00'+x.toString(16)).slice(-2))).join('');
     }
 
